@@ -9,7 +9,7 @@
     </head>
     <header class="page-header">
       <nav class="navigation-logo">
-        <img src="" alt="Лого Sedona" class="header-logo">
+        <img src="images\header-logo.svg" width="138" height="64" alt="Лого Sedona" class="header-logo">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a href="#">Главная</a>
@@ -21,14 +21,10 @@
             <a href="#">Гостиница</a>
           </li>
         </ul>
-        <ul>
-          <li class="navigation-item">
-            <img src="" alt="Поиск">
-          </li>
-          <li class="navigation-item">
-            <img src="" alt="Избранное">
-          </li>
-        </ul>
+
+        <img src="images\icon-search.svg" width="44" height="64" alt="Поиск">
+        <img src="images\icon-heart.svg" width="44" height="64" alt="Избранное">
+
         <ul>
           <li><a href="#" class="button">ХОЧУ СЮДА!</a></li>
         </ul>
@@ -37,10 +33,7 @@
 
     <main class="main-index">
       <section class="hero">
-        <img class="index-background" src="" alt="Вид города Седона">
-        <h2 class="font-welcome">WELCOME</h2>
-        <h2 class="font-gargeous">&mdash;to the gargeous&mdash;</h2>
-        <h1>SEDONA</h1>
+        <img class="main-img" src="images\main-img.jpg" width="1200" height="485" alt="Вид города Седона">
         <h2>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
           <br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
         </h2>
@@ -49,30 +42,30 @@
 
       <section class="advantages">
         <h3 class="visually-hidden advantages-title">НАСТОЯЩИЙ ГОРОДОК</h3>
-        <img class="rectangle" src="" alt="Rectangle 125">
+        <img class="rectangle-white" src="images\rectangle-white.png" width="60" height="2" alt="Rectangle 125">
         <p class="advantages-title">Седона — не аттракцион для туристов, там течёт своя жизнь
         </p>
-        <img class="photo-1" src="" alt="Вид города">
+        <img class="advantages-city" src="images\advantages-city.jpg" width="800" height="384" alt="Вид города">
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title-black">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <img class="rectangle" src="" alt="Rectangle 125">
+            <img class="rectangle-black" src="images\rectangle-black.png" width="60" height="2" alt="Rectangle 125">
             <p class="advantages-description-black">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title-black">КРАСИВАЯ ДОРОГА</h3>
-            <img class="rectangle" src="" alt="Rectangle 125">
+            <img class="rectangle-black" src="images\rectangle-black.png" width="60" height="2" alt="Rectangle 125">
             <p class="advantages-description-black">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title-black">МАЛО ТУРИСТОВ</h3>
-            <img class="rectangle" src="" alt="Rectangle 125">
+            <img class="rectangle-black" src="images\rectangle-black.png" width="60" height="2" alt="Rectangle 125">
             <p class="advantages-description-black">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
-        <img class="photo-2" src="" alt="Вид каньона">
+        <img class="photo-2" src="images\advantages-mountain.jpg" width="800" height="384" alt="Вид каньона">
         <h3 class="visually-hidden advantages-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-        <img class="rectangle" src="" alt="Rectangle 125">
+        <img class="rectangle-white" src="images\rectangle-white.png" width="60" height="2" alt="Rectangle 125">
         <p class="advantages-title">Да, по нему можно пройти! Если вы осмелитесь, разумеется
         </p>
       </section>
@@ -80,17 +73,17 @@
       <section class="frame">
         <ul class="frame-list">
           <li class="frame-item">
-            <img class="home" src="" alt="Жильё">
+            <img class="home" src="images\advantages-home.svg" width="75" height="72" alt="Жильё">
             <h3 class="home-title">ЖИЛЬЁ</h3>
             <p class="home-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="frame-item">
-            <img class="eat" src="" alt="Еда">
+            <img class="eat" src="images\advantages-eat.svg" width="75" height="72" alt="Еда">
             <h3 class="eat-title">ЕДА</h3>
             <p class="eat-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="frame-item">
-            <img class="souvenirs" src="" alt="Сувениры">
+            <img class="souvenirs" src="images\advantages-souvenirs.svg" width="75" height="72" alt="Сувениры">
             <h3 class="souvenirs-title">СУВЕНИРЫ</h3>
             <p class="souvenirs-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -107,7 +100,8 @@
       </section>
 
       <section class="subscribe">
-        <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <img class="subscribe-img" src="images\subscribe-img.jpg" width="1200" height="414.86"
+          alt="Размытые горы Седона" <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
@@ -117,13 +111,20 @@
           </button>
         </form>
       </section>
+
     </main>
+
     <footer class="page-footer">
       <section class="footer-social">
         <ul class="footer-social-list">
-          <li class="button footer-social-item"><a href="#"><img src="" alt="Логотип Вконтакте"></a></li>
-          <li class="button footer-social-item"><a href="#"><img src="" alt="Логотип Telegram"></a></li>
-          <li class="button footer-social-item"><a href="#"><img src="" alt="Логотип YouTube"></a></li>
+          <li class="button footer-social-item"><a href="#"><img src="images\icon-vk.svg" width="24" height="14"
+                alt="Логотип Вконтакте"></a>
+          </li>
+          <li class="button footer-social-item"><a href="#"><img src="images\icon-tg.svg" width="24" height="14"
+                alt="Логотип Telegram"></a>
+          </li>
+          <li class="button footer-social-item"><a href="#"><img src="images\icon-youtube.svg" width="24" height="14"
+                alt="Логотип YouTube"></a></li>
           </p>
       </section>
 
@@ -134,10 +135,10 @@
       </section>
 
       <section class="footer-logo">
-        <img class="logo-htmlacademy" src="" alt="Лого htmlacademy">
+        <img class="logo-htmlacademy" src="images\logo-htmlacademy.png" width="115" height="33" alt="Лого htmlacademy">
       </section>
-    </footer>
 
+    </footer>
 
   </body>
 
