@@ -14,6 +14,11 @@
   font-display: swap;
 }
 
+html {
+  width: 100%;
+}
+
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -109,11 +114,7 @@ ul {
 }
 
 .main-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  flex-wrap: nowrap;
+  flex-grow: 1;
 }
 
 .background-image {
