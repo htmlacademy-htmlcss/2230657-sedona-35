@@ -255,7 +255,7 @@ ul {
   width: 400px;
   min-height: 384px;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .advantages-item-column-one::before {
@@ -265,7 +265,6 @@ ul {
   position: absolute;
   content: "";
   bottom: 204px;
-  overflow: hidden;
 }
 
 .advantages-title-white {
@@ -309,7 +308,7 @@ ul {
   width: 400px;
   min-height: 384px;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .advantages-item-column-two::before {
@@ -319,7 +318,6 @@ ul {
   position: absolute;
   content: "";
   bottom: 192px;
-  overflow: hidden;
 }
 
 .advantages-item-column-three {
@@ -330,7 +328,7 @@ ul {
   width: 400px;
   min-height: 384px;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .advantages-item-column-three::before {
@@ -340,7 +338,6 @@ ul {
   position: absolute;
   content: "";
   bottom: 192px;
-  overflow: hidden;
 }
 
 .advantages-title-black {
@@ -383,25 +380,34 @@ ul {
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
   min-height: 384px;
+  background-image: url("../images/advantages-home.svg");
+  background-position: top 80px center;
+  background-repeat: no-repeat;
+  overflow: auto;
 }
 
 .frame-two {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   min-height: 384px;
+  background-image: url("../images/advantages-eat.svg");
+  background-position: top 80px center;
+  background-repeat: no-repeat;
+  overflow: auto;
 }
 
-.home-image {
-  background-image: url("../images/advantages-home.svg");
-  width: 75px;
-  min-height: 72px;
-  margin: 80px auto 0;
-  background-position: center;
+.frame-three {
+  background: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  min-height: 384px;
+  background-image: url("../images/advantages-souvenirs.svg");
+  background-position: top 80px center;
   background-repeat: no-repeat;
+  overflow: auto;
 }
 
 .frame-title-black {
-  margin: 30px auto;
+  margin: 182px auto 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -419,24 +425,6 @@ ul {
   margin: 0;
 }
 
-.eat-image {
-  background-image: url("../images/advantages-eat.svg");
-  width: 75px;
-  min-height: 72px;
-  margin: 80px auto 0;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.souvenirs-image {
-  background-image: url("../images/advantages-souvenirs.svg");
-  width: 75px;
-  min-height: 72px;
-  margin: 80px auto 0;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .hotel {
   text-align: center;
   padding: 0;
@@ -447,6 +435,7 @@ ul {
   justify-content: center;
   padding-top: 96px;
   padding-bottom: 96px;
+  overflow: auto;
 }
 
 .hotel-title {
@@ -465,7 +454,6 @@ ul {
   line-height: 26px;
   width: 592px;
   min-height: 52px;
-  overflow: hidden;
 }
 
 .hotel-button {
@@ -493,6 +481,7 @@ ul {
   background-size: 1200px auto;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: auto;
 }
 
 .subscribe-image {
@@ -521,7 +510,6 @@ ul {
   text-align: center;
   color: #FFFFFF;
   margin: 0 auto 54px;
-  overflow: hidden;
   width: 475px;
   min-height: 52.51px;
 }
