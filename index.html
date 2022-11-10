@@ -3,8 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title>
+    <title>Седона: Главная страница</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon-32x32.png">
   </head>
 
   <body>
@@ -23,8 +24,10 @@
           </li>
         </ul>
         <ul class="user-menu">
-          <li><img class="user-menu-icon" src="images/icon-search.svg" alt="Поиск"></li>
-          <li><img class="user-menu-icon" src="images/icon-heart.svg" alt="Избранное"></li>
+          <li><img class="user-menu-icon user-menu-icon-search" src="images/icon-search.svg" alt="Поиск"></li>
+          <li><img class="user-menu-icon user-menu-icon-heart" src="images/icon-heart.svg" alt="Избранное">
+            <p class="circle"><span class="user-menu-text">12</span></p>
+          </li>
           <li><a href="#" class="button-header">ХОЧУ СЮДА!</a></li>
         </ul>
 
@@ -46,8 +49,8 @@
 
       <section class="advantages">
         <ul class="advantages-list">
-          <li class="advantages-item1">
-            <div class="advantages-item-column1">
+          <li class="advantages-item-one">
+            <div class="advantages-item-column-one">
               <h3 class="visually-hidden advantages-title-white">НАСТОЯЩИЙ <br>ГОРОДОК</h3>
               <p class="advantages-description-white">Седона — не аттракцион для <br>туристов, там течёт своя<br>
                 жизнь
@@ -56,42 +59,42 @@
             <img class="advantages-city" src="images/advantages-city.jpg" alt="Вид города">
           </li>
 
-          <li class="advantages-item2">
-            <div class="advantages-item-column2">
+          <li class="advantages-item-two">
+            <div class="advantages-item-column-two">
               <h3 class="advantages-title-black">НЕБОЛЬШАЯ <br>ПЛОЩАДЬ</h3>
               <p class="advantages-description-black">Все достопримечательности <br>находятся очень близко</p>
             </div>
-            <div class="advantages-item-column3">
+            <div class="advantages-item-column-three">
               <h3 class="advantages-title-black">КРАСИВАЯ <br>ДОРОГА</h3>
               <p class="advantages-description-black">Ехать в Седону из Лас-Вегаса <br>совсем не скучно!</p>
             </div>
-            <div class="advantages-item-column2">
+            <div class="advantages-item-column-two">
               <h3 class="advantages-title-black">МАЛО <br>ТУРИСТОВ</h3>
               <p class="advantages-description-black">Большинство едет в Гранд <br>Каньон и толпится там</p>
             </div>
           </li>
 
-          <li class="advantages-item3">
-            <img class="photo-2" src="images/advantages-mountain.jpg" alt="Вид каньона">
-            <div class="advantages-item-column1">
+          <li class="advantages-item-three">
+            <img class="photo-two" src="images/advantages-mountain.jpg" alt="Вид каньона">
+            <div class="advantages-item-column-one">
               <h3 class="visually-hidden advantages-title-white">ТАМ ЕСТЬ <br>МОСТ ДЬЯВОЛА</h3>
               <p class="advantages-description-white">Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
               </p>
             </div>
           </li>
-          <li class="advantages-item4">
-            <div class="frame1">
+          <li class="advantages-item-four">
+            <div class="frame-one">
               <div class="home-image"></div>
               <h3 class="frame-title-black">ЖИЛЬЁ</h3>
               <p class="frame-description-black">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </div>
-            <div class="frame2">
+            <div class="frame-two">
               <div class="eat-image"></div>
               <h3 class="frame-title-black">ЕДА</h3>
               <p class="frame-description-black">Всегда заказывайте <br>топовый фирменный бургер, <br>вы не
                 разочаруетесь!</p>
             </div>
-            <div class="frame1">
+            <div class="frame-one">
               <div class="souvenirs-image"></div>
               <h3 class="frame-title-black">СУВЕНИРЫ</h3>
               <p class="frame-description-black">Не только китайского, <br>но и настоящего местного <br>производства!
@@ -104,11 +107,9 @@
       <section class="hotel">
         <h2 class="hotel-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p class="hotel-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
-          гостиниц в
-          Седоне</p>
-        <a href="catalog.html">
-          <h2 class="hotel-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-        </a>
+          гостиниц в Седоне</p>
+        <h2 class="hotel-button"><a class="link-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a></h2>
+
       </section>
 
       <aside class="subscribe">
@@ -147,7 +148,7 @@
         <div class="footer-contacts">
           <address class="footer-contacts-phone">
             <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-     c:\Users\dzigu\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.html     </address>
+          </address>
         </div>
 
         <div class="footer-logo">
