@@ -9,28 +9,32 @@
   </head>
 
   <body>
+
     <header class="page-header">
       <a href="#"><img src="images/header-logo.svg" width="140" height="70" alt="Лого Sedona" class="header-logo"></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-link">
-            <a href="#">Главная</a>
+            <a class="navi-link" href="#">Главная</a>
           </li>
           <li class="navigation-link">
-            <a href="#">О Седоне</a>
+            <a class="navi-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-link">
-            <a href="#">Гостиница</a>
+            <a class="navi-link" href="#">Гостиница</a>
           </li>
         </ul>
         <ul class="user-menu">
-          <li><a href="#"><img class="user-menu-icon" src="images/icon-search.svg" width="20" height="20" alt="Поиск"></a></li>
-          <li><a href="#"><img class="user-menu-icon" src="images/icon-heart.svg" width="20" height="20" alt="Избранное"></a>
-            <div class="circle"><span class="user-menu-text">12</span></div>
+          <li class="user-menu-icon"><a class="user-menu-icon-link" href="#"><img src="images/icon-search.svg"
+                width="20" height="20" alt="Поиск"></a></li>
+          <li class="user-menu-icon"><a class="user-menu-icon-link" href="#"><img src="images/icon-heart.svg" width="20"
+                height="20" alt="Избранное"></a>
+            <div class="circle">
+              <span class="user-menu-text">12</span>
+            </div>
           </li>
           <li><a href="#" class="button-header">ХОЧУ СЮДА!</a></li>
         </ul>
-
       </nav>
     </header>
 
@@ -50,6 +54,7 @@
       <section class="advantages">
         <ul class="advantages-list">
           <li class="advantages-item-one">
+            <h2 class="visually-hidden"></h2>
             <div class="advantages-item-column-one">
               <h3 class="visually-hidden advantages-title-white">НАСТОЯЩИЙ <br>ГОРОДОК</h3>
               <p class="advantages-description-white">Седона — не аттракцион для <br>туристов, там течёт своя<br>
@@ -82,22 +87,22 @@
               </p>
             </div>
           </li>
-          <li class="advantages-item-four">
-            <div class="frame-one">
-              <h3 class="frame-title-black">ЖИЛЬЁ</h3>
-              <p class="frame-description-black">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
-            </div>
-            <div class="frame-two">
-              <h3 class="frame-title-black">ЕДА</h3>
-              <p class="frame-description-black">Всегда заказывайте <br>топовый фирменный бургер, <br>вы не
-                разочаруетесь!</p>
-            </div>
-            <div class="frame-three">
-              <div class="souvenirs-image"></div>
-              <h3 class="frame-title-black">СУВЕНИРЫ</h3>
-              <p class="frame-description-black">Не только китайского, <br>но и настоящего местного <br>производства!
-              </p>
-            </div>
+        </ul>
+
+        <ul class="advantages-item-four">
+          <li class="frame-one">
+            <h3 class="frame-title-black">ЖИЛЬЁ</h3>
+            <p class="frame-description-black">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
+          </li>
+          <li class="frame-two">
+            <h3 class="frame-title-black">ЕДА</h3>
+            <p class="frame-description-black">Всегда заказывайте <br>топовый фирменный бургер, <br>вы не
+              разочаруетесь!</p>
+          </li>
+          <li class="frame-three">
+            <h3 class="frame-title-black">СУВЕНИРЫ</h3>
+            <p class="frame-description-black">Не только китайского, <br>но и настоящего местного <br>производства!
+            </p>
           </li>
         </ul>
       </section>
@@ -106,8 +111,9 @@
         <h2 class="hotel-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p class="hotel-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <h2 class="hotel-button"><a class="link-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a></h2>
-
+        <h2 class="hotel-button">
+          <a class="link-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        </h2>
       </section>
 
       <aside class="subscribe">
@@ -115,7 +121,7 @@
           <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <!-- <label for="newsletter-email" class="visually-hidden"></label> -->
+            <label for="newsletter-email" class="visually-hidden"></label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
             <button class="button-subscribe" type="submit">
@@ -123,7 +129,6 @@
             </button>
           </form>
         </div>
-
       </aside>
 
     </main>
@@ -132,30 +137,28 @@
       <div class="footer-block">
         <div class="footer-social">
           <ul class="footer-social-list">
-            <li class="footer-social-item"><a href="#"><img src="images/icon-vk.svg" width="24" height="14"
-                  alt="Логотип Вконтакте"></a>
+            <li class="footer-social-item"><a class="footer-social-item-link-vk" href="#"><img src="images/icon-vk.svg"
+                  width="24" height="14" alt="Логотип Вконтакте"></a>
             </li>
-            <li class="footer-social-item"><a href="#"><img src="images/icon-tg.svg" width="18" height="16"
-                  alt="Логотип Telegram"></a>
+            <li class="footer-social-item"><a class="footer-social-item-link-tg" href="#"><img src="images/icon-tg.svg"
+                  width="18" height="16" alt="Логотип Telegram"></a>
             </li>
-            <li class="footer-social-item"><a href="#"><img src="images/icon-youtube.svg" width="22" height="17"
-                  alt="Логотип YouTube"></a></li>
+            <li class="footer-social-item"><a class="footer-social-item-link-yt" href="#"><img
+                  src="images/icon-youtube.svg" width="22" height="17" alt="Логотип YouTube"></a></li>
           </ul>
         </div>
 
         <div class="footer-contacts">
           <address class="footer-contacts-phone">
-            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="footer-contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
         </div>
 
         <div class="footer-logo">
-          <a href="https://htmlacademy.ru/" target="_blank"><img src="images/logo-htmlacademy.png" width="115"
-              height="33" alt="Лого htmlacademy"></a>
+          <a class="footer-logo-link" href="https://htmlacademy.ru/" target="_blank"><img
+              src="images/logo-htmlacademy.svg" width="115" height="33" alt="Лого htmlacademy"></a>
         </div>
       </div>
-
-
     </footer>
 
   </body>
