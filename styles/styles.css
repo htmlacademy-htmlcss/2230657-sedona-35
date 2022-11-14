@@ -301,9 +301,39 @@ ul {
   justify-items: start;
 }
 
-.advantages-item-one {
+.advantages-item-column {
+  background: rgba(131, 179, 211, 0.12);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  min-height: 384px;
+  position: relative;
+  overflow: auto;
+  flex-wrap: nowrap;
   margin: 0;
+}
+
+.advantages-item-column::before {
+  width: 60px;
+  min-height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  content: "";
+  bottom: 192px;
+}
+
+.advantages-item-column:nth-child(4) {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-column:first-child:last-child::before {
+  width: 60px;
+  min-height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  content: "";
+  bottom: 192px;
 }
 
 .advantages-item-column-one {
@@ -360,48 +390,6 @@ ul {
   display: flex;
   margin: 0;
   grid-column: 1/-1;
-}
-
-.advantages-item-column {
-  background: rgba(131, 179, 211, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  min-height: 384px;
-  position: relative;
-  overflow: auto;
-  flex-wrap: nowrap;
-}
-
-.advantages-item-column::before {
-  width: 60px;
-  min-height: 2px;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  content: "";
-  bottom: 192px;
-}
-
-.advantages-item-column:first-child:last-child {
-  background: rgba(131, 179, 211, 0.12);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  min-height: 384px;
-  position: relative;
-  overflow: auto;
-  flex-wrap: nowrap;
-}
-
-.advantages-item-column:first-child:last-child::before {
-  width: 60px;
-  min-height: 2px;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  content: "";
-  bottom: 192px;
 }
 
 .advantages-title-black {
@@ -639,6 +627,15 @@ ul {
 
 .button-subscribe:focus {
   outline: none;
+}
+
+.button-subscribe-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-footer {
