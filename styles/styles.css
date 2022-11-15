@@ -655,10 +655,11 @@ img {
   padding: 0;
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
+  font-family: inherit;
+  font-style: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  color: #FFFFFF;
 }
 
 .button-subscribe:focus {
@@ -666,11 +667,6 @@ img {
 }
 
 .button-subscribe-text {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
