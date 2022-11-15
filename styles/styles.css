@@ -35,17 +35,18 @@ body {
   flex-wrap: wrap;
 }
 
-a {
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  list-style-type: none;
   color: #000000;
   text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-ul {
-  padding: 0;
 }
 
 .visually-hidden {
@@ -211,6 +212,7 @@ ul {
   line-height: 20px;
   color: rgb(255, 255, 255);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .button-header:hover {
@@ -237,6 +239,7 @@ ul {
 .background-image {
   width: 1200px;
   min-height: 485px;
+  background: #62B1D0;
   background-image: url("../images/main-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -244,6 +247,7 @@ ul {
 }
 
 .main-img-bottom {
+  background: #FFFFFF;
   background-image: url("../images/main-img-bottom.svg");
   background-repeat: no-repeat;
   width: 1200px;
@@ -310,7 +314,6 @@ ul {
   min-height: 384px;
   position: relative;
   overflow: auto;
-  flex-wrap: nowrap;
   margin: 0;
 }
 
@@ -323,7 +326,7 @@ ul {
   bottom: 192px;
 }
 
-.advantages-item-column:nth-child(4) {
+.advantages-item-column:nth-child(3) {
   background: rgba(131, 179, 211, 0.2);
 }
 
@@ -336,6 +339,15 @@ ul {
   bottom: 192px;
 }
 
+.advantages-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 400px;
+  min-height: 384px;
+  grid-column: 1/-1;
+}
+
 .advantages-item-column-one {
   background: #82B3D3;
   display: flex;
@@ -345,8 +357,7 @@ ul {
   min-height: 384px;
   position: relative;
   overflow: auto;
-  flex-wrap: nowrap;
-  grid-column: 3/4;
+  grid-column: 1/-1;
 }
 
 .advantages-item-column-one::before {
@@ -414,6 +425,27 @@ ul {
   padding-top: 32px;
   padding-bottom: 81px;
   margin-top: 0;
+}
+
+.advantages-item-column-two {
+  background: #82B3D3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  min-height: 384px;
+  position: relative;
+  overflow: auto;
+  grid-column: 3/4;
+}
+
+.advantages-item-column-two::before {
+  width: 60px;
+  min-height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  content: "";
+  bottom: 204px;
 }
 
 .advantages-item-three {
@@ -541,6 +573,7 @@ ul {
 
 .link-button {
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .link-button:focus {
@@ -550,6 +583,7 @@ ul {
 .subscribe {
   width: 1200px;
   min-height: 414.86px;
+  background: #66CC99;
   background-image: url("../images/subscribe-img.jpg");
   background-size: 1200px auto;
   background-position: center;
@@ -602,6 +636,8 @@ ul {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   padding-left: 20px;
+  font-family: inherit;
+  font-style: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -630,12 +666,16 @@ ul {
 }
 
 .button-subscribe-text {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .page-footer {
