@@ -100,8 +100,15 @@ img {
 
 .navigation-link {
   width: 114px;
-  text-align: center;
   overflow: hidden;
+  min-height: 64px;
+}
+
+.navi-link {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navi-link:focus {
@@ -111,22 +118,17 @@ img {
 .navigation-link:hover {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   border-bottom: 2px solid #756257;
-  padding-bottom: 19px;
-  padding-top: 20px;
 }
 
 .navigation-link:active {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   border-bottom: 2px solid #756257;
-  padding-bottom: 19px;
-  padding-top: 20px;
 }
 
 .navigation-link:focus {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   border-bottom: 2px solid #756257;
-  padding-bottom: 19px;
-  padding-top: 20px;
+  outline: none;
 }
 
 .navigation-link:visited {
@@ -157,12 +159,19 @@ img {
 }
 
 .user-menu-icon {
-  margin-left: 24px;
-  margin-top: 5px;
+  width: 44px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.user-menu-icon:first-child {
-  margin-left: 14px;
+.user-menu-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  min-height: 64px;
 }
 
 .user-menu-icon-link:focus {
@@ -170,7 +179,7 @@ img {
 }
 
 .circle {
-  background: #7DB54F;
+  background-color: #7DB54F;
   border-radius: 10px;
   min-height: 20px;
   width: 20px;
@@ -201,7 +210,7 @@ img {
   background: 50% 50% rgb(117, 97, 87);
   border-radius: 4px;
   overflow: hidden;
-  margin-left: 32px;
+  margin-left: 21px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,11 +225,11 @@ img {
 }
 
 .button-header:hover {
-  background: #615048;
+  background-color: #615048;
 }
 
 .button-header:focus {
-  background: #615048;
+  background-color: #615048;
   outline: none;
 }
 
@@ -229,7 +238,7 @@ img {
 }
 
 .button-header:visited {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .main-index {
@@ -239,7 +248,7 @@ img {
 .background-image {
   width: 1200px;
   min-height: 485px;
-  background: #62B1D0;
+  background-color: #465A61;
   background-image: url("../images/main-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -247,7 +256,7 @@ img {
 }
 
 .main-img-bottom {
-  background: #FFFFFF;
+  background-color: transparent;
   background-image: url("../images/main-img-bottom.svg");
   background-repeat: no-repeat;
   width: 1200px;
@@ -258,7 +267,13 @@ img {
 }
 
 .welcom-sedona {
+  background-color: transparent;
+  background-image: url("../images/welcom-sedona.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 32px 371px 44px;
+  width: 458px;
+  height: 352px;
 
 }
 
@@ -306,7 +321,7 @@ img {
 }
 
 .advantages-item-column {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,20 +335,20 @@ img {
 .advantages-item-column::before {
   width: 60px;
   min-height: 2px;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   content: "";
   bottom: 192px;
 }
 
 .advantages-item-column:nth-child(3) {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-column:first-child:last-child::before {
   width: 60px;
   min-height: 2px;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   content: "";
   bottom: 192px;
@@ -349,7 +364,7 @@ img {
 }
 
 .advantages-item-column-one {
-  background: #82B3D3;
+  background-color: #82B3D3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,7 +378,7 @@ img {
 .advantages-item-column-one::before {
   width: 60px;
   min-height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   content: "";
   bottom: 204px;
@@ -428,7 +443,7 @@ img {
 }
 
 .advantages-item-column-two {
-  background: #82B3D3;
+  background-color: #82B3D3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,7 +457,7 @@ img {
 .advantages-item-column-two::before {
   width: 60px;
   min-height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   content: "";
   bottom: 204px;
@@ -461,7 +476,7 @@ img {
 }
 
 .frame-one {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   min-height: 384px;
   background-image: url("../images/advantages-home.svg");
@@ -474,7 +489,7 @@ img {
 }
 
 .frame-two {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   min-height: 384px;
   background-image: url("../images/advantages-eat.svg");
@@ -487,7 +502,7 @@ img {
 }
 
 .frame-three {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   min-height: 384px;
   background-image: url("../images/advantages-souvenirs.svg");
@@ -544,7 +559,7 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto 20px;
+  margin: 0;
 }
 
 .hotel-description {
@@ -554,12 +569,13 @@ img {
   line-height: 26px;
   width: 592px;
   min-height: 52px;
+  padding-top: 20px;
 }
 
 .hotel-button {
   width: 376px;
   min-height: 52px;
-  background: #756157;
+  background-color: #756157;
   border-radius: 4px;
   font-size: 20px;
   line-height: 36px;
@@ -568,27 +584,39 @@ img {
   align-items: center;
   margin: 0 auto;
   color: #FFFFFF;
+  text-transform: uppercase;
   flex-wrap: wrap;
 }
 
-.link-button {
-  color: #FFFFFF;
-  text-transform: uppercase;
+.hotel-button:hover {
+  background-color: #615048;
 }
 
-.link-button:focus {
+.hotel-button:focus {
+  background-color: #615048;
   outline: none;
+}
+
+.hotel-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-button:visited {
+  background-color: #E5E5E5;
 }
 
 .subscribe {
   width: 1200px;
-  min-height: 414.86px;
-  background: #66CC99;
+  height: 414.86px;
+  background-color: #3C6279;
   background-image: url("../images/subscribe-img.jpg");
   background-size: 1200px auto;
   background-position: center;
   background-repeat: no-repeat;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe-image {
@@ -597,7 +625,9 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 104px;
+  width: 684px;
+  min-height: 214.86px;
+  overflow: auto;
 }
 
 .subscribe-title {
@@ -606,7 +636,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin: 0 auto 20px;
+  margin: 0;
   padding-top: 96px;
 }
 
@@ -616,15 +646,19 @@ img {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-  margin: 0 auto 54px;
+  margin: 0;
+  padding-top: 20px;
   width: 475px;
   min-height: 52.51px;
+  overflow: auto;
 }
 
 .newsletter-form {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 54px;
+  padding-bottom: 104px;
 }
 
 .field {
@@ -633,7 +667,7 @@ img {
   border: 0;
   margin: 0;
   padding: 0;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
   padding-left: 20px;
   font-family: inherit;
@@ -653,7 +687,7 @@ img {
   border: 0;
   margin: 0;
   padding: 0;
-  background: #82B3D3;
+  background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   font-family: inherit;
   font-style: inherit;
@@ -662,8 +696,22 @@ img {
   line-height: 36px;
 }
 
+.button-subscribe:hover {
+  background-color: #68A2CA;
+}
+
 .button-subscribe:focus {
+  background-color: #68A2CA;
   outline: none;
+}
+
+.button-subscribe:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-subscribe:visited {
+  background-color: #E5E5E5;
 }
 
 .button-subscribe-text {
@@ -711,6 +759,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 47.33px;
 }
 
 .footer-social-item-link {
@@ -737,7 +786,7 @@ img {
 }
 
 .footer-contacts {
-  width: 331px;
+  width: 333px;
   min-height: 40px;
   text-align: center;
   text-transform: uppercase;
