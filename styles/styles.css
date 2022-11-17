@@ -102,6 +102,7 @@ img {
   width: 114px;
   overflow: hidden;
   min-height: 64px;
+  border-bottom: 2px solid transparent;
 }
 
 .navi-link {
@@ -131,7 +132,7 @@ img {
   outline: none;
 }
 
-.navigation-link:visited {
+.navigation-link:disabled {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   border-bottom: 2px solid #756257;
 }
@@ -228,16 +229,16 @@ img {
   background-color: #615048;
 }
 
+.button-header-text:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-header:focus {
   background-color: #615048;
   outline: none;
 }
 
-.button-header-text:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.button-header:visited {
+.button-header:disabled {
   background-color: #E5E5E5;
 }
 
@@ -592,16 +593,16 @@ img {
   background-color: #615048;
 }
 
+.hotel-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotel-button:focus {
   background-color: #615048;
   outline: none;
 }
 
-.hotel-button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.hotel-button:visited {
+.hotel-button:disabled {
   background-color: #E5E5E5;
 }
 
@@ -700,17 +701,17 @@ img {
   background-color: #68A2CA;
 }
 
-.button-subscribe:focus {
-  background-color: #68A2CA;
-  outline: none;
-}
-
 .button-subscribe:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-subscribe:visited {
+.button-subscribe:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.button-subscribe:disabled {
   background-color: #E5E5E5;
 }
 
@@ -780,7 +781,7 @@ img {
   outline: none;
 }
 
-.footer-social-item-link:visited {
+.footer-social-item-link:disabled {
   fill: #68A2CA;
   opacity: 30%;
 }
@@ -823,16 +824,16 @@ img {
   fill: #000000;
 }
 
+.footer-logo-link:active {
+  fill: #756157;
+}
+
 .footer-logo-link:focus {
   fill: #756157;
   outline: none;
 }
 
-.footer-logo-link:active {
-  fill: #756157;
-}
-
-.footer-logo-link:visited {
+.footer-logo-link:disabled {
   fill: #756157;
   opacity: 30%;
 }
