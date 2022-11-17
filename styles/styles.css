@@ -260,7 +260,7 @@ img {
   background-image: url("../images/main-img-bottom.svg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 57px;
+  min-height: 57px;
   position: absolute;
   top: 493px;
   z-index: 1;
@@ -271,9 +271,9 @@ img {
   background-image: url("../images/welcom-sedona.svg");
   background-position: center;
   background-repeat: no-repeat;
-  padding: 32px 371px 44px;
+  padding: 55px 371px 44px;
   width: 458px;
-  height: 352px;
+  min-height: 352px;
 
 }
 
@@ -607,10 +607,10 @@ img {
 
 .subscribe {
   width: 1200px;
-  height: 414.86px;
+  min-height: 414.86px;
   background-color: #3C6279;
   background-image: url("../images/subscribe-img.jpg");
-  background-size: 1200px auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: auto;
